@@ -1,8 +1,8 @@
 dependencies:
-  - python=3.7.5
+  - python=3.8
   - pip=19.3.1
   - pip:
-    - jupyter==1.0.0
+    - jupyter
     - pandas==1.0.0
     - scikit-learn==0.22.1
     - numpy==1.18.1
