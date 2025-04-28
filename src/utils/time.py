@@ -1,5 +1,5 @@
 from datetime import datetime
-
+from dateutil import parser
 DATE_FMT = "%Y-%m-%d %H:%M:%S.%f %Z"
 
 
@@ -13,7 +13,10 @@ def iso_to_datetime(iso_str: str, date_format: str = DATE_FMT) -> datetime:
     Returns:
         datetime object that represents the input date
     """
-    return datetime.strptime(iso_str, date_format)
+    if date_format:
+        return datetime.strptime(iso_str, date_format)
+    else:
+        return parser.parse(iso_str)
 
 
 def hour_of_iso_date(iso_str: str, date_format: str = DATE_FMT) -> int:
