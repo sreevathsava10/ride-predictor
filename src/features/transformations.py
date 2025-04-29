@@ -64,24 +64,6 @@ def driver_historical_completed_bookings(
     df["historical_completed_bookings"] = df["historical_completed_bookings"].fillna(0).astype(int)
     return df
 
-# def deduplicate_completed_rides(df: pd.DataFrame) -> pd.DataFrame:
-#     """
-#     Keeps the latest entry for each ride/order based on event timestamp.
-
-#     Parameters
-#     ----------
-#     df : pd.DataFrame
-#         The input DataFrame with potentially multiple entries per order.
-
-#     Returns
-#     -------
-#     pd.DataFrame
-#         DataFrame with only the latest record per order_id.
-#     """
-
-#     df['event_timestamp'] = df['event_timestamp'].apply(lambda x: iso_to_datetime(x))
-#     df['event_timestamp'] = df['event_timestamp'].dt.tz_localize(None)
-#     return df
 
 
 
