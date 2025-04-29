@@ -1,0 +1,71 @@
+commit 41db7a3871beb5b8d64a1efbe5b1ff17d25fb941
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Tue Apr 29 13:18:16 2025 +0530
+
+    added metrics and prediction of model
+
+commit 376c795d4a7f3f4f22c3d37b5354a5988ee4dcaf
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Tue Apr 29 13:17:14 2025 +0530
+
+    modified classifier.py
+
+commit 0a91ab5686866ceba085cb71721ae26bea5eab90
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Tue Apr 29 13:16:14 2025 +0530
+
+    modified predict_model.py
+
+commit 035075075517522bde2d6013802aafdbeb35e4dc
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Tue Apr 29 13:15:37 2025 +0530
+
+    modified utils/time.py
+
+commit bb34f897d67d1854c146a8ca7d12b90ea6ddc7ee
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Tue Apr 29 13:14:07 2025 +0530
+
+    added features names on which the model is trained
+
+commit 499f9162a871a46a15ff663318ac8a425b873d77
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Tue Apr 29 13:11:56 2025 +0530
+
+    trained new model
+
+commit cf2791ab483a6409ddfcef7e7ac65d2ee814b584
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Tue Apr 29 13:10:06 2025 +0530
+
+    added some features for model prediction
+
+commit 0b081e762c50c44f2b390c7e2db64c30df7b5983
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Tue Apr 29 13:08:58 2025 +0530
+
+    modified make_dataset
+
+commit a7d1bb7235e07c25101f1eca0049e98600638650
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Mon Apr 28 16:08:55 2025 +0530
+
+    Done feature engineering
+
+commit c11008afbb5bdd85b544ba4c100509687dbe1f10
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Mon Apr 28 16:05:21 2025 +0530
+
+    modified a function in time.py to not raise error when the event timestamp is not in the given format
+
+commit 7d7b1b9cf05e6e069551bc30774a1d991b526b22
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Mon Apr 28 15:59:27 2025 +0530
+
+    updated some outdated versions to run the code without errors
+
+commit 58e80591449170498cc949ee4fe1eab6f9645c6e
+Author: Sreevathsava <sreevathsava.pak@tigeranalytics.com>
+Date:   Mon Apr 28 15:56:32 2025 +0530
+
+    initial commit
