@@ -1,5 +1,4 @@
 import pandas as pd
-
 from src.utils.config import load_config
 from src.utils.store import AssignmentStore
 
@@ -38,7 +37,6 @@ def clean_participant_df(df: pd.DataFrame) -> pd.DataFrame:
 
 def merge_dataset(bookings: pd.DataFrame, participants: pd.DataFrame) -> pd.DataFrame:
     df = pd.merge(participants, bookings, on="order_id", how="left")
-
     return df
 
 
