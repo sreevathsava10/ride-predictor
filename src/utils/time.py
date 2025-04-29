@@ -13,18 +13,27 @@ def iso_to_datetime(iso_str: str, date_format: str = DATE_FMT) -> datetime:
     Returns:
         datetime object that represents the input date
     """
-    if date_format:
-        return datetime.strptime(iso_str, date_format)
-    else:
-        return parser.parse(iso_str)
+    return parser.parse(iso_str)
 
 
 def hour_of_iso_date(iso_str: str, date_format: str = DATE_FMT) -> int:
     return iso_to_datetime(iso_str, date_format).hour
 
 
-def robust_hour_of_iso_date(iso_str: str, date_format: str = DATE_FMT) -> int:
+def robust_hour_of_iso_date(iso_date_str):
+    if "UTC" not in iso_date_str:
+        raise ValueError(f"Invalid ISO date string: {iso_date_str}")
+    
+    # Now continue your original parsing logic
+    # Example (assuming datetime parsing):
+    from datetime import datetime
+
     try:
-        return hour_of_iso_date(iso_str, date_format)
-    except:
-        return hour_of_iso_date(iso_str, "%Y-%m-%d %H:%M:%S %Z")
+        dt = datetime.strptime(iso_date_str, "%Y-%m-%d %H:%M:%S.%f UTC")
+    except ValueError:
+        dt = datetime.strptime(iso_date_str, "%Y-%m-%d %H:%M:%S UTC")
+    
+    return dt.hour
+
+
+
