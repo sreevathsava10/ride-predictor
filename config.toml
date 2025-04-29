@@ -1,10 +1,11 @@
-features=["trip_distance", "driver_distance", "event_hour", "driver_gps_accuracy"]
+features=["trip_distance","driver_gps_accuracy","driver_distance","driver_familiarity_score","drop_near_next_pickup","historical_completed_bookings","log_acceptance_time_seconds","is_accepted_last5day_rolling_mean","driver_cluster_label","customer_cluster_label","event_hour"]
 target="is_completed"
 test_size=0.2
 
 [random_forest]
-n_estimators=300
-max_depth=30
+n_estimators=100
+max_depth=10
 n_jobs=-1
-random_state=33
-bootstrap=false
+random_state=42
+bootstrap=true
+class_weight='balanced'
