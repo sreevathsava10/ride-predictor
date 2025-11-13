@@ -1,8 +1,5 @@
 # 🚗 Ride Predictor
 
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
 
 > Predict which driver is most likely to accept a given ride order — enabling smarter, faster, and more efficient ride allocations.
 
@@ -30,5 +27,15 @@ Key design choice: a **two-stage pipeline**
 - **Unit and integration tests** using `pytest`.
 - Ready for extension to **real-time scoring (FastAPI/Flask)**.
 
+### Makefile `make` run runs the whole pipeline (ingest → features → train → predict → test)
 
-
+Install dependecies after that run the pipeline
+```
+conda env create -f environment.yaml
+conda activate <env-name>
+pip install -r requirements.txt
+```
+To run the pipeline go to the root of the ride_predictor and run the below code.
+```
+make run
+```
